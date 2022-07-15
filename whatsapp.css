@@ -1,0 +1,12 @@
+.float1{
+	position:fixed;
+	width:50px;
+	height:1100px;
+	bottom:40px;
+	right:138px;
+background: url(images/whatsapp.png)  no-repeat right center 
+}
+
+.my-float1{
+	margin-top:16px;
+}

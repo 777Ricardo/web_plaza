@@ -1,0 +1,12 @@
+.float{
+	position:fixed;
+	width:60px;
+	height:1150px;
+	bottom:20px;
+	right:-1px;
+  background: url(images/twitter.png)  no-repeat right center 
+}
+
+.my-float{
+	margin-top:16px;
+}

@@ -1,0 +1,30 @@
+CREATE DATABASE sistema;
+
+SHOW DATABASES;
+
+USE sistema;
+
+create table docente(
+	Id_docente interger primary key,
+	nombre text(30),
+	apellido text(30),
+        direccion text(30),
+	Telefono interger,
+        salario interger
+);
+
+create table estudiante(
+	id_estudiante interger primary key,
+	nombre_estudiante text(30),
+        apellido_estudiante text(30),
+	fecha_nacimiento date
+);
+create table nota(
+	id_docente integer,
+        id_estudiante interger,
+        nota interger,
+	 
+
+constraint docenteFKnota foreign key (id_docente) references docente (id_docente),
+constraint estudianteFKnota foreign key (id_docente) references estudiante (id_estudiante)
+);
